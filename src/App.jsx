@@ -5,18 +5,18 @@ import './App.css';
 import './js/getItems.js';
 
 function App() {
-  const [myCart, updateCart] = useState([]);
-
-  useEffect(() => {
+  const [myCart, updateCart] = useState(() => {
     const saved = localStorage.getItem('cart');
     if (saved) {
       try {
-        updateCart(JSON.parse(saved));
+        return JSON.parse(saved);
       } catch (err) {
-        console.error('не удалось загрузить корзину:', err);
+        console.error(err);
+        return [];
       }
     }
-  }, []);
+    return [];
+  });
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(myCart));
