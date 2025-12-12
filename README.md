@@ -38,3 +38,7 @@ npm run dev
 ## Что было сложным
 
 Связывание Vanilla JS каталога с React корзиной через Custom Events. Адаптивность корзины - на desktop sticky, на mobile обычный блок.
+
+## Ссылка на демо
+
+https://scrolldynasty.github.io/minimarket/
