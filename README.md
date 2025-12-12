@@ -38,19 +38,3 @@ npm run dev
 ## Что было сложным
 
 Связывание Vanilla JS каталога с React корзиной через Custom Events. Адаптивность корзины - на desktop sticky, на mobile обычный блок.
-
-## Как опубликовать на GitHub
-
-1. Создай новый репозиторий на GitHub с именем `mini-marketplace`
-2. Выполни в терминале:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/твой-username/mini-marketplace.git
-git push -u origin main
-```
-
-3. Отправь ссылку: `https://github.com/твой-username/mini-marketplace`
